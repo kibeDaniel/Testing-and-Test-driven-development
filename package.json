@@ -1,15 +1,8 @@
 {
-  "name": "kibe-palindrome",
+  "name": "kibe_palindrome",
   "version": "1.0.0",
   "description": "Palindrome detector",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "^6.1.3"
-  },
   "scripts": {
     "test": "mocha"
   },
@@ -27,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/kibeDaniel/Testing-and-Test-driven-development/issues"
   },
-  "homepage": "https://github.com/kibeDaniel/Testing-and-Test-driven-development#readme"
+  "homepage": "https://github.com/kibeDaniel/Testing-and-Test-driven-development#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mocha": "^6.1.3"
+  },
+  "devDependencies": {}
 }
