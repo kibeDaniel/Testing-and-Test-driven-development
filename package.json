@@ -1,8 +1,15 @@
 {
-  "name": "kibe_palindrome",
+  "name": "kibe-palindrome",
   "version": "1.0.0",
   "description": "Palindrome detector",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.1.3"
+  },
   "scripts": {
     "test": "mocha"
   },
