@@ -1,4 +1,4 @@
-module.exports = Phrase;
+module.exports = Phrase; // exporting the module
 
 // Adds `reverse` to all strings.
 String.prototype.reverse = function() {
