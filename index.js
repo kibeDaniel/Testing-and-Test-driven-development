@@ -19,10 +19,12 @@ function Phrase(content) {
   //   new Phrase("Hello, world!").letters() === "Helloworld"
   this.letters = function letters() {
     let theLetters = [];
+    const letterRegex = /[a-z]/i; // simplify the regex by using i after /.../ to make a case-insensitive match
     for (let i = 0; i < this.content.length; i++) {
-      if (this.content.charAt(i).match(/[a-zA-Z]/)) {
-        theLetters.push(this.content.charAt(i));
-      }
+       let character = this.content.charAt(i);
+       if (character.match(letterRegex)) {
+         theLetters.push(character);
+       }
     }
     return theLetters.join("");
   }
