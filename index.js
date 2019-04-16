@@ -15,10 +15,18 @@ function Phrase(content) {
   }
 
   // Returns the letters in the content.
+  // For example:
+  //   new Phrase("Hello, world!").letters() === "Helloworld"
   this.letters = function letters() {
-    return this.content;    // stub return value
+    let theLetters = [];
+    for (let i = 0; i < this.content.length; i++) {
+      if (this.content.charAt(i).match(/[a-zA-Z]/)) {
+        theLetters.push(this.content.charAt(i));
+      }
+    }
+    return theLetters.join("");
   }
-  
+
   // Returns true if the phrase is a palindrome, false otherwise.
   this.palindrome = function palindrome() {
     return this.processedContent() === this.processedContent().reverse();
