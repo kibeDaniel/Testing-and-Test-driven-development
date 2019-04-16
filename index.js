@@ -20,12 +20,11 @@ function Phrase(content) {
   this.letters = function letters() {
     let theLetters = [];
     const letterRegex = /[a-z]/i; // simplify the regex by using i after /.../ to make a case-insensitive match
-    for (let i = 0; i < this.content.length; i++) {
-       let character = this.content.charAt(i);
+    Array.from(this.content).forEach(function(character) {
        if (character.match(letterRegex)) {
-         theLetters.push(character);
+          theLetters.push(character);
        }
-    }
+    });
     return theLetters.join("");
   }
 
